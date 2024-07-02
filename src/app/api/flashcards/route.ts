@@ -1,17 +1,19 @@
-import { NextApiRequest, NextApiResponse } from 'next';
-import fs from 'fs';
+import fs from 'fs/promises';
 import path from 'path';
 import { NextResponse } from 'next/server';
 
 const flashcardsFilePath = path.join(process.cwd(), 'studyMaterial.json');
 
-export async function POST(req: NextApiRequest, res: NextApiResponse) {
+export async function POST(req: Request) {
   try {
-    const newMaterial = req.body;
-    const data = fs.readFileSync(flashcardsFilePath, 'utf8');
+    const newMaterial = await req.json();
+    
+    const data = await fs.readFile(flashcardsFilePath, 'utf8');
     const materials = JSON.parse(data);
     materials.push(newMaterial);
-    fs.writeFileSync(flashcardsFilePath, JSON.stringify(materials, null, 2));
+    
+    await fs.writeFile(flashcardsFilePath, JSON.stringify(materials, null, 2));
+    
     return NextResponse.json({ message: 'Flashcard added successfully' }, { status: 200 });
   } catch (error) {
     console.error('POST error:', error);
@@ -19,6 +21,6 @@ export async function POST(req: NextApiRequest, res: NextApiResponse) {
   }
 }
 
-export function handler(req: NextApiRequest, res: NextApiResponse) {
-  return NextResponse.json({ error: `Method ${req.method} Not Allowed` }, { status: 405 });
+export async function GET(req: Request) {
+  return NextResponse.json({ error: 'Method Not Allowed' }, { status: 405 });
 }

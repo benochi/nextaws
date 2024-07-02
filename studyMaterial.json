@@ -75,7 +75,5 @@
       "SNS: Pub/Sub messaging service",
       "SQS: Queue service for message decoupling, supports Standard and FIFO queues"
     ]
-  },
-  {},
-  {}
+  }
 ]

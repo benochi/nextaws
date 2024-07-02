@@ -337,8 +337,5 @@
       "By manually deleting the items"
     ],
     "answer": "By using a Time To Live (TTL) attribute"
-  },
-  {},
-  {},
-  {}
+  }
 ]
