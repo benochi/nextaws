@@ -337,5 +337,255 @@
       "By manually deleting the items"
     ],
     "answer": "By using a Time To Live (TTL) attribute"
+  },
+  {
+    "question": "Which AWS service is used to manage software deployment using Chef or Puppet?",
+    "choices": [
+      "AWS CodeDeploy",
+      "AWS OpsWorks",
+      "AWS CloudFormation",
+      "AWS CodePipeline"
+    ],
+    "answer": "AWS OpsWorks"
+  },
+  {
+    "question": "Which service provides fully managed Redis and Memcached?",
+    "choices": [
+      "Amazon RDS",
+      "Amazon Redshift",
+      "Amazon ElastiCache",
+      "Amazon DynamoDB"
+    ],
+    "answer": "Amazon ElastiCache"
+  },
+  {
+    "question": "How can you improve the availability of a DynamoDB table?",
+    "choices": [
+      "Enable Multi-AZ",
+      "Use DynamoDB Streams",
+      "Use DAX",
+      "Enable Auto Scaling"
+    ],
+    "answer": "Enable Multi-AZ"
+  },
+  {
+    "question": "Which AWS service can help you detect and monitor threats in your applications and infrastructure?",
+    "choices": [
+      "AWS Shield",
+      "AWS WAF",
+      "AWS GuardDuty",
+      "AWS IAM"
+    ],
+    "answer": "AWS GuardDuty"
+  },
+  {
+    "question": "What is the purpose of Amazon S3 Transfer Acceleration?",
+    "choices": [
+      "Increase storage capacity",
+      "Encrypt data at rest",
+      "Speed up transfers to and from S3",
+      "Provide high availability"
+    ],
+    "answer": "Speed up transfers to and from S3"
+  },
+  {
+    "question": "Which AWS service provides real-time analytics on streaming data?",
+    "choices": [
+      "Amazon Kinesis",
+      "Amazon Redshift",
+      "Amazon RDS",
+      "Amazon DynamoDB"
+    ],
+    "answer": "Amazon Kinesis"
+  },
+  {
+    "question": "Which AWS service is best for archiving data at a low cost?",
+    "choices": [
+      "Amazon S3",
+      "Amazon Glacier",
+      "Amazon EBS",
+      "Amazon RDS"
+    ],
+    "answer": "Amazon Glacier"
+  },
+  {
+    "question": "Which AWS service can you use to automate and manage backups of EBS volumes?",
+    "choices": [
+      "AWS Backup",
+      "AWS CloudFormation",
+      "AWS Lambda",
+      "AWS OpsWorks"
+    ],
+    "answer": "AWS Backup"
+  },
+  {
+    "question": "Which feature allows you to set conditions for when an S3 bucket should move objects to different storage classes?",
+    "choices": [
+      "S3 Lifecycle Policies",
+      "S3 Versioning",
+      "S3 Transfer Acceleration",
+      "S3 Cross-Region Replication"
+    ],
+    "answer": "S3 Lifecycle Policies"
+  },
+  {
+    "question": "What is the main purpose of AWS CloudTrail?",
+    "choices": [
+      "Monitoring application performance",
+      "Tracking API activity",
+      "Storing backup data",
+      "Managing serverless applications"
+    ],
+    "answer": "Tracking API activity"
+  },
+  {
+    "question": "Which service would you use to run a managed Kubernetes cluster?",
+    "choices": [
+      "Amazon ECS",
+      "AWS Lambda",
+      "Amazon EKS",
+      "AWS Fargate"
+    ],
+    "answer": "Amazon EKS"
+  },
+  {
+    "question": "How can you restrict access to specific IAM users in an S3 bucket?",
+    "choices": [
+      "By creating bucket policies",
+      "By enabling versioning",
+      "By using S3 Transfer Acceleration",
+      "By creating Lambda functions"
+    ],
+    "answer": "By creating bucket policies"
+  },
+  {
+    "question": "Which AWS service helps you to centrally manage billing and control policies across multiple AWS accounts?",
+    "choices": [
+      "AWS Organizations",
+      "AWS IAM",
+      "AWS CloudFormation",
+      "AWS Config"
+    ],
+    "answer": "AWS Organizations"
+  },
+  {
+    "question": "Which service allows you to run code without provisioning or managing servers?",
+    "choices": [
+      "Amazon EC2",
+      "AWS Lambda",
+      "Amazon ECS",
+      "Amazon RDS"
+    ],
+    "answer": "AWS Lambda"
+  },
+  {
+    "question": "How do you enable detailed monitoring for an Amazon EC2 instance?",
+    "choices": [
+      "Use AWS CloudTrail",
+      "Enable CloudWatch detailed monitoring",
+      "Create an IAM role",
+      "Use AWS Config"
+    ],
+    "answer": "Enable CloudWatch detailed monitoring"
+  },
+  {
+    "question": "Which AWS service helps you create a fault-tolerant, scalable application?",
+    "choices": [
+      "Amazon CloudFront",
+      "Amazon RDS",
+      "Amazon Route 53",
+      "AWS Elastic Beanstalk"
+    ],
+    "answer": "AWS Elastic Beanstalk"
+  },
+  {
+    "question": "Which AWS service allows you to set up event-driven, serverless computing for application integration?",
+    "choices": [
+      "AWS Lambda",
+      "Amazon SNS",
+      "Amazon EventBridge",
+      "Amazon SQS"
+    ],
+    "answer": "Amazon EventBridge"
+  },
+  {
+    "question": "What is the benefit of using AWS Global Accelerator?",
+    "choices": [
+      "Improves application availability and performance",
+      "Encrypts data at rest",
+      "Monitors server health",
+      "Manages IAM policies"
+    ],
+    "answer": "Improves application availability and performance"
+  },
+  {
+    "question": "Which AWS service enables you to easily create and manage a collection of related AWS resources?",
+    "choices": [
+      "AWS CloudFormation",
+      "AWS OpsWorks",
+      "AWS CodePipeline",
+      "AWS CodeBuild"
+    ],
+    "answer": "AWS CloudFormation"
+  },
+  {
+    "question": "How can you ensure that an Amazon S3 bucket is not publicly accessible?",
+    "choices": [
+      "Use bucket policies and access control lists (ACLs)",
+      "Enable versioning",
+      "Enable transfer acceleration",
+      "Create an RDS snapshot"
+    ],
+    "answer": "Use bucket policies and access control lists (ACLs)"
+  },
+  {
+    "question": "Which AWS service helps you to automate compliance and security checks?",
+    "choices": [
+      "AWS Config",
+      "AWS Trusted Advisor",
+      "AWS CloudTrail",
+      "AWS Shield"
+    ],
+    "answer": "AWS Config"
+  },
+  {
+    "question": "Which AWS service allows you to create dedicated network connections from your on-premises network to AWS?",
+    "choices": [
+      "AWS VPN",
+      "AWS Direct Connect",
+      "Amazon VPC",
+      "AWS PrivateLink"
+    ],
+    "answer": "AWS Direct Connect"
+  },
+  {
+    "question": "Which AWS service helps you to run data warehousing workloads?",
+    "choices": [
+      "Amazon RDS",
+      "Amazon DynamoDB",
+      "Amazon Redshift",
+      "Amazon ElastiCache"
+    ],
+    "answer": "Amazon Redshift"
+  },
+  {
+    "question": "Which AWS service provides a fully managed graph database?",
+    "choices": [
+      "Amazon RDS",
+      "Amazon Neptune",
+      "Amazon DynamoDB",
+      "Amazon Aurora"
+    ],
+    "answer": "Amazon Neptune"
+  },
+  {
+    "question": "What is the main benefit of using AWS CodeCommit?",
+    "choices": [
+      "It provides a secure, scalable, managed source control service",
+      "It automates software deployment",
+      "It monitors application performance",
+      "It manages infrastructure as code"
+    ],
+    "answer": "It provides a secure, scalable, managed source control service"
   }
 ]
