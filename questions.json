@@ -1,591 +1,112 @@
 [
   {
-    "question": "What is the default region when you create an AWS account?",
+    "question": "A company wants to improve the performance of its popular API service that offers unauthenticated read access to daily updated statistical information via Amazon API Gateway and AWS Lambda. What measures can the company take?",
     "choices": [
-      "us-east-1",
-      "us-west-1",
-      "eu-west-1",
-      "ap-southeast-1"
+      "Enable API caching in API Gateway",
+      "Configure API gateway to use ElastiCache for Memcached",
+      "Configure API Gateway to use Gateway VPC Endpoint",
+      "Set up usage plans and API keys in API gateway"
     ],
-    "answer": "us-east-1"
+    "answer": "Enable API caching in API Gateway"
   },
   {
-    "question": "Which AWS service allows you to run containerized applications without managing servers?",
+    "question": "You have migrated an on-premise SQL Server database to an Amazon Relational Database Service (RDS) database attached to a VPC inside a private subnet. Also, the related Java application, hosted on-premise, has been moved to an Amazon Lambda function. Which of the following should you implement to connect AWS Lambda function to its RDS instance?",
     "choices": [
-      "Amazon EC2",
-      "AWS Lambda",
-      "AWS Fargate",
-      "Amazon ECS"
+      "Use Lambda layers to connect to the internet and RDS separately",
+      "Configure lambda to connect to the public subnet that will give internet access and use Security Group to access RDS inside the private subnet",
+      "Use Environment variables to pass in the RDS connection string",
+      "Configure Lambda to connect to VPC with private subnet and Security Group needed to access RDS"
     ],
-    "answer": "AWS Fargate"
+    "answer": "Configure Lambda to connect to VPC with private subnet and Security Group needed to access RDS"
   },
   {
-    "question": "How can you improve the performance of read-heavy applications using DynamoDB?",
+    "question": "The manager at an IT company wants to set up member access to user-specific folders in an Amazon S3 bucket - bucket-a. So, user x can only access files in his folder - bucket-a/user/user-x/ and user y can only access files in her folder - bucket-a/user/user-y/ and so on. As a Developer Associate, which of the following IAM constructs would you recommend so that the policy snippet can be made generic for all team members and the manager does not need to create separate IAM policy for each team member?",
     "choices": [
-      "Use DAX",
-      "Enable Multi-AZ",
-      "Use RDS",
-      "Enable Versioning"
+      "IAM policy condition",
+      "IAM policy resource",
+      "IAM policy principal",
+      "IAM policy variables"
     ],
-    "answer": "Use DAX"
+    "answer": "IAM policy variables"
   },
   {
-    "question": "What is the primary use case for AWS Lambda?",
+    "question": "A developer has been asked to create an application that can be deployed across a fleet of EC2 instances. The configuration must allow for full control over the deployment steps using the blue-green deployment. Which service will help you achieve that?",
     "choices": [
-      "Running virtual machines",
-      "Hosting static websites",
-      "Running code in response to events",
-      "Managing databases"
+      "CodeDeploy",
+      "CodePipeline",
+      "CodeBuild",
+      "Elastic Beanstalk"
     ],
-    "answer": "Running code in response to events"
+    "answer": "CodeDeploy"
   },
   {
-    "question": "How do you grant an EC2 instance access to S3 without embedding credentials?",
+    "question": "You have deployed a Java application to an EC2 instance where it uses the X-Ray SDK. When testing from your personal computer, the application sends data to X-Ray but when the application runs from within EC2, the application fails to send data to X-Ray. Which of the following does NOT help with debugging the issue?",
     "choices": [
-      "Use IAM role",
-      "Store credentials in the instance",
-      "Use a key pair",
-      "Enable Multi-Factor Authentication"
+      "EC2 instance role",
+      "X-ray sampling",
+      "EC2 x-ray Daemon",
+      "CloudTrail"
     ],
-    "answer": "Use IAM role"
+    "answer": "CloudTrail"
   },
   {
-    "question": "Which service would you use to set up a REST API quickly?",
+    "question": "As part of his development work, an AWS Certified Developer Associate is creating policies and attaching them to IAM identities. After creating necessary Identity-based policies, he is now creating Resource-based policies. Which is the only resource-based policy that the IAM service supports?",
     "choices": [
-      "AWS Lambda",
-      "Amazon API Gateway",
-      "Amazon EC2",
-      "Amazon S3"
+      "Trust Policy",
+      "AWS Organizations service control policies (SCP)",
+      "Permissions boundary",
+      "Access control list (ACL)"
     ],
-    "answer": "Amazon API Gateway"
+    "answer": "Trust Policy"
   },
   {
-    "question": "How can you ensure high availability for an RDS instance?",
+    "question": "As a developer, you are working on creating an application using AWS Cloud Development Kit (CDK). Which of the following represents the correct order of steps to be followed for creating an app using AWS CDK?",
     "choices": [
-      "Enable Multi-AZ",
-      "Use DAX",
-      "Enable Versioning",
-      "Use IAM roles"
+      "Create the app from a template provided by AWS CloudFormation -> Add code to the app to create resources within stacks -> Build the app (optional) -> Synthesize one or more stacks in the app -> Deploy stack(s) to your AWS account",
+      "Create the app from a template provided by AWS CDK -> Add code to the app to create resources within stacks -> Build the app (optional) -> Synthesize one or more stacks in the app -> Deploy stack(s) to your AWS account",
+      "Create the app from a template provided by AWS CloudFormation -> Add code to the app to create resources within stacks -> Synthesize one or more stacks in the app -> Deploy stack(s) to your AWS account -> Build the app",
+      "Create the app from a template provided by AWS CDK -> Add code to the app to create resources within stacks -> Synthesize one or more stacks in the app -> Deploy stack(s) to your AWS account -> Build the app"
     ],
-    "answer": "Enable Multi-AZ"
+    "answer": "Create the app from a template provided by AWS CDK -> Add code to the app to create resources within stacks -> Synthesize one or more stacks in the app -> Deploy stack(s) to your AWS account -> Build the app"
   },
   {
-    "question": "Which feature of S3 can you use to ensure data durability?",
+    "question": "The development team has just configured and attached the IAM policy needed to access AWS Billing and Cost Management for all users under the Finance department. But, the users are unable to see AWS Billing and Cost Management service in the AWS console. What could be the reason for this issue?",
     "choices": [
-      "Enable Versioning",
-      "Use Multi-AZ",
-      "Enable CloudTrail",
-      "Use IAM roles"
+      "The users might have another policy that restricts them from accessing the Billing information",
+      "IAM user should be created under AWS billing and cost management and not under AWS account to have access to Billing console",
+      "You need to activate IAM user access to the Billing and Cost Management console for all the users who need access",
+      "Only root user has access to AWS billing and cost management console"
     ],
-    "answer": "Enable Versioning"
+    "answer": "You need to activate IAM user access to the Billing and Cost Management console for all the users who need access"
   },
   {
-    "question": "What is the benefit of using Amazon Aurora compared to traditional MySQL databases?",
+    "question": "You're a developer working on a large scale order processing application. After developing the features, you commit your code to AWS CodeCommit and begin building the project with AWS CodeBuild before it gets deployed to the server. The build is taking too long and the error points to an issue resolving dependencies from a third-party. You would like to prevent a build running this long in the future for similar underlying reasons. Which of the following options represents the best solution to address this use-case?",
     "choices": [
-      "Improved performance and availability",
-      "Cheaper storage costs",
-      "Better integration with EC2",
-      "Easier to use"
+      "Enable CodeBuild timeouts",
+      "Use AWS CloudWatch events",
+      "Use AWS Lambda",
+      "Use VPC flow logs"
     ],
-    "answer": "Improved performance and availability"
+    "answer": "Use AWS CloudWatch events"
   },
   {
-    "question": "How can you securely connect your on-premises network to your VPC?",
+    "question": "You are a developer in a manufacturing company that has several servers on-site. The company decides to move new development to the cloud using serverless technology. You decide to use the AWS Serverless Application Model (AWS SAM) and work with an AWS SAM template file to represent your serverless architecture. Which of the following is NOT a valid serverless resource type?",
     "choices": [
-      "Use AWS Direct Connect",
-      "Use S3",
-      "Enable Multi-AZ",
-      "Use IAM roles"
+      "AWS::Serverless::SimpleTable",
+      "AWS::Serverless::UserPool",
+      "AWS::Serverless::Function",
+      "AWS::Serverless::API"
     ],
-    "answer": "Use AWS Direct Connect"
+    "answer": "AWS::Serverless::UserPool"
   },
   {
-    "question": "What is a key feature of Amazon S3 that helps reduce storage costs for infrequently accessed data?",
+    "question": "A development team wants to deploy an AWS Lambda function that requires significant CPU utilization. As a Developer Associate, which of the following would you suggest for reducing the average runtime of the function?",
     "choices": [
-      "S3 Intelligent-Tiering",
-      "S3 Glacier",
-      "S3 Standard-IA",
-      "All of the above"
+      "Deploy the function with its memory allocation set to the maximum amount",
+      "Deploy the function using Lambda layers",
+      "Deploy the function with its CPU allocation set to the maximum amount",
+      "Deploy the function into multiple AWS regions"
     ],
-    "answer": "All of the above"
-  },
-  {
-    "question": "Which AWS service would you use for a managed database with support for MySQL and PostgreSQL?",
-    "choices": [
-      "Amazon RDS",
-      "Amazon DynamoDB",
-      "Amazon S3",
-      "AWS Lambda"
-    ],
-    "answer": "Amazon RDS"
-  },
-  {
-    "question": "What AWS service allows you to send push notifications to mobile devices?",
-    "choices": [
-      "Amazon SNS",
-      "Amazon SQS",
-      "Amazon SES",
-      "Amazon MQ"
-    ],
-    "answer": "Amazon SNS"
-  },
-  {
-    "question": "Which AWS service provides a CDN to distribute content globally with low latency?",
-    "choices": [
-      "Amazon CloudFront",
-      "Amazon S3",
-      "Amazon RDS",
-      "Amazon VPC"
-    ],
-    "answer": "Amazon CloudFront"
-  },
-  {
-    "question": "How can you automate the creation and management of AWS infrastructure?",
-    "choices": [
-      "AWS CloudFormation",
-      "AWS Elastic Beanstalk",
-      "Amazon EC2",
-      "AWS Lambda"
-    ],
-    "answer": "AWS CloudFormation"
-  },
-  {
-    "question": "What feature of IAM adds an extra layer of security by requiring a physical token?",
-    "choices": [
-      "MFA",
-      "IAM roles",
-      "Access keys",
-      "IAM policies"
-    ],
-    "answer": "MFA"
-  },
-  {
-    "question": "Which AWS service can be used to decouple applications with message queues?",
-    "choices": [
-      "Amazon SQS",
-      "Amazon SNS",
-      "Amazon SES",
-      "Amazon MQ"
-    ],
-    "answer": "Amazon SQS"
-  },
-  {
-    "question": "Which service would you use to manage a large-scale, distributed application that requires container orchestration?",
-    "choices": [
-      "Amazon ECS",
-      "AWS Lambda",
-      "Amazon S3",
-      "Amazon RDS"
-    ],
-    "answer": "Amazon ECS"
-  },
-  {
-    "question": "What is a key benefit of using AWS Fargate?",
-    "choices": [
-      "No server management",
-      "Cheaper costs",
-      "Better performance",
-      "Enhanced security"
-    ],
-    "answer": "No server management"
-  },
-  {
-    "question": "How do you enable automatic scaling for an EC2 instance?",
-    "choices": [
-      "Use Auto Scaling groups",
-      "Enable CloudTrail",
-      "Enable CloudWatch",
-      "Use IAM roles"
-    ],
-    "answer": "Use Auto Scaling groups"
-  },
-  {
-    "question": "Which service provides a fully managed NoSQL database?",
-    "choices": [
-      "Amazon DynamoDB",
-      "Amazon RDS",
-      "Amazon S3",
-      "AWS Lambda"
-    ],
-    "answer": "Amazon DynamoDB"
-  },
-  {
-    "question": "Which AWS service can be used for real-time data processing?",
-    "choices": [
-      "Amazon Kinesis",
-      "Amazon S3",
-      "AWS Lambda",
-      "Amazon RDS"
-    ],
-    "answer": "Amazon Kinesis"
-  },
-  {
-    "question": "What is the main purpose of Amazon CloudWatch?",
-    "choices": [
-      "Monitoring and logging",
-      "Data storage",
-      "Database management",
-      "Networking"
-    ],
-    "answer": "Monitoring and logging"
-  },
-  {
-    "question": "Which feature of Amazon S3 allows you to store multiple versions of an object?",
-    "choices": [
-      "Versioning",
-      "Lifecycle policies",
-      "Replication",
-      "Encryption"
-    ],
-    "answer": "Versioning"
-  },
-  {
-    "question": "Which AWS service allows you to manage DNS records?",
-    "choices": [
-      "Amazon Route 53",
-      "AWS Direct Connect",
-      "Amazon CloudFront",
-      "AWS VPN"
-    ],
-    "answer": "Amazon Route 53"
-  },
-  {
-    "question": "Which IAM policy construct would make a policy snippet generic for all team members to access their user-specific folders in Amazon S3?",
-    "choices": [
-      "IAM Policy Variables",
-      "Policy Resource",
-      "Policy Principal",
-      "Policy Condition"
-    ],
-    "answer": "IAM Policy Variables"
-  },
-  {
-    "question": "For deploying multiple Availability Zone (AZ) workloads, which storage option should you use?",
-    "choices": [
-      "Amazon EFS volumes",
-      "AWS Gateway Storage BING mounts",
-      "Docker volumes"
-    ],
-    "answer": "Amazon EFS volumes"
-  },
-  {
-    "question": "For providing application-specific functionality to worldwide users and managing API access, which AWS service should you use?",
-    "choices": [
-      "CloudFront",
-      "Billing usage plans",
-      "Lambda custom authorizers",
-      "API Gateway usage plans"
-    ],
-    "answer": "API Gateway usage plans"
-  },
-  {
-    "question": "What is the monthly charge for 35 seconds of usage of a t2.micro instance?",
-    "choices": [
-      "$0.00",
-      "$0.01",
-      "$0.10",
-      "$0.60"
-    ],
-    "answer": "$0.00"
-  },
-  {
-    "question": "As a developer creating infrastructure using AWS CDK, what are the correct steps in order?",
-    "choices": [
-      "Write the CDK Code, Run `cdk synth`, Run `cdk deploy`, Monitor and Manage",
-      "Run `cdk deploy`, Write the CDK Code, Run `cdk synth`, Monitor and Manage",
-      "Write the CDK Code, Monitor and Manage, Run `cdk synth`, Run `cdk deploy`",
-      "Run `cdk synth`, Write the CDK Code, Monitor and Manage, Run `cdk deploy`"
-    ],
-    "answer": "Write the CDK Code, Run `cdk synth`, Run `cdk deploy`, Monitor and Manage"
-  },
-  {
-    "question": "To track latencies and IP address patterns in your application, which AWS services should you use?",
-    "choices": [
-      "ALB access logs",
-      "CloudWatch metrics",
-      "ALB request tracing",
-      "CloudTrail logs"
-    ],
-    "answer": "ALB access logs"
-  },
-  {
-    "question": "What is CloudWatch Metrics used for?",
-    "choices": [
-      "Tracking IP address patterns",
-      "Monitoring and recording resource utilization and application performance",
-      "Request tracing for load balancers",
-      "Logging changes to AWS resources"
-    ],
-    "answer": "Monitoring and recording resource utilization and application performance"
-  },
-  {
-    "question": "Which is the only resource-based policy that the IAM service supports?",
-    "choices": [
-      "Bucket policies",
-      "Role trust policies",
-      "Security group policies",
-      "VPC endpoint policies"
-    ],
-    "answer": "Role trust policies"
-  },
-  {
-    "question": "How do you expire items in a DynamoDB table?",
-    "choices": [
-      "By using a Time To Live (TTL) attribute",
-      "By setting a deletion timestamp in the item",
-      "By using a Lambda function to delete old items",
-      "By manually deleting the items"
-    ],
-    "answer": "By using a Time To Live (TTL) attribute"
-  },
-  {
-    "question": "Which AWS service is used to manage software deployment using Chef or Puppet?",
-    "choices": [
-      "AWS CodeDeploy",
-      "AWS OpsWorks",
-      "AWS CloudFormation",
-      "AWS CodePipeline"
-    ],
-    "answer": "AWS OpsWorks"
-  },
-  {
-    "question": "Which service provides fully managed Redis and Memcached?",
-    "choices": [
-      "Amazon RDS",
-      "Amazon Redshift",
-      "Amazon ElastiCache",
-      "Amazon DynamoDB"
-    ],
-    "answer": "Amazon ElastiCache"
-  },
-  {
-    "question": "How can you improve the availability of a DynamoDB table?",
-    "choices": [
-      "Enable Multi-AZ",
-      "Use DynamoDB Streams",
-      "Use DAX",
-      "Enable Auto Scaling"
-    ],
-    "answer": "Enable Multi-AZ"
-  },
-  {
-    "question": "Which AWS service can help you detect and monitor threats in your applications and infrastructure?",
-    "choices": [
-      "AWS Shield",
-      "AWS WAF",
-      "AWS GuardDuty",
-      "AWS IAM"
-    ],
-    "answer": "AWS GuardDuty"
-  },
-  {
-    "question": "What is the purpose of Amazon S3 Transfer Acceleration?",
-    "choices": [
-      "Increase storage capacity",
-      "Encrypt data at rest",
-      "Speed up transfers to and from S3",
-      "Provide high availability"
-    ],
-    "answer": "Speed up transfers to and from S3"
-  },
-  {
-    "question": "Which AWS service provides real-time analytics on streaming data?",
-    "choices": [
-      "Amazon Kinesis",
-      "Amazon Redshift",
-      "Amazon RDS",
-      "Amazon DynamoDB"
-    ],
-    "answer": "Amazon Kinesis"
-  },
-  {
-    "question": "Which AWS service is best for archiving data at a low cost?",
-    "choices": [
-      "Amazon S3",
-      "Amazon Glacier",
-      "Amazon EBS",
-      "Amazon RDS"
-    ],
-    "answer": "Amazon Glacier"
-  },
-  {
-    "question": "Which AWS service can you use to automate and manage backups of EBS volumes?",
-    "choices": [
-      "AWS Backup",
-      "AWS CloudFormation",
-      "AWS Lambda",
-      "AWS OpsWorks"
-    ],
-    "answer": "AWS Backup"
-  },
-  {
-    "question": "Which feature allows you to set conditions for when an S3 bucket should move objects to different storage classes?",
-    "choices": [
-      "S3 Lifecycle Policies",
-      "S3 Versioning",
-      "S3 Transfer Acceleration",
-      "S3 Cross-Region Replication"
-    ],
-    "answer": "S3 Lifecycle Policies"
-  },
-  {
-    "question": "What is the main purpose of AWS CloudTrail?",
-    "choices": [
-      "Monitoring application performance",
-      "Tracking API activity",
-      "Storing backup data",
-      "Managing serverless applications"
-    ],
-    "answer": "Tracking API activity"
-  },
-  {
-    "question": "Which service would you use to run a managed Kubernetes cluster?",
-    "choices": [
-      "Amazon ECS",
-      "AWS Lambda",
-      "Amazon EKS",
-      "AWS Fargate"
-    ],
-    "answer": "Amazon EKS"
-  },
-  {
-    "question": "How can you restrict access to specific IAM users in an S3 bucket?",
-    "choices": [
-      "By creating bucket policies",
-      "By enabling versioning",
-      "By using S3 Transfer Acceleration",
-      "By creating Lambda functions"
-    ],
-    "answer": "By creating bucket policies"
-  },
-  {
-    "question": "Which AWS service helps you to centrally manage billing and control policies across multiple AWS accounts?",
-    "choices": [
-      "AWS Organizations",
-      "AWS IAM",
-      "AWS CloudFormation",
-      "AWS Config"
-    ],
-    "answer": "AWS Organizations"
-  },
-  {
-    "question": "Which service allows you to run code without provisioning or managing servers?",
-    "choices": [
-      "Amazon EC2",
-      "AWS Lambda",
-      "Amazon ECS",
-      "Amazon RDS"
-    ],
-    "answer": "AWS Lambda"
-  },
-  {
-    "question": "How do you enable detailed monitoring for an Amazon EC2 instance?",
-    "choices": [
-      "Use AWS CloudTrail",
-      "Enable CloudWatch detailed monitoring",
-      "Create an IAM role",
-      "Use AWS Config"
-    ],
-    "answer": "Enable CloudWatch detailed monitoring"
-  },
-  {
-    "question": "Which AWS service helps you create a fault-tolerant, scalable application?",
-    "choices": [
-      "Amazon CloudFront",
-      "Amazon RDS",
-      "Amazon Route 53",
-      "AWS Elastic Beanstalk"
-    ],
-    "answer": "AWS Elastic Beanstalk"
-  },
-  {
-    "question": "Which AWS service allows you to set up event-driven, serverless computing for application integration?",
-    "choices": [
-      "AWS Lambda",
-      "Amazon SNS",
-      "Amazon EventBridge",
-      "Amazon SQS"
-    ],
-    "answer": "Amazon EventBridge"
-  },
-  {
-    "question": "What is the benefit of using AWS Global Accelerator?",
-    "choices": [
-      "Improves application availability and performance",
-      "Encrypts data at rest",
-      "Monitors server health",
-      "Manages IAM policies"
-    ],
-    "answer": "Improves application availability and performance"
-  },
-  {
-    "question": "Which AWS service enables you to easily create and manage a collection of related AWS resources?",
-    "choices": [
-      "AWS CloudFormation",
-      "AWS OpsWorks",
-      "AWS CodePipeline",
-      "AWS CodeBuild"
-    ],
-    "answer": "AWS CloudFormation"
-  },
-  {
-    "question": "How can you ensure that an Amazon S3 bucket is not publicly accessible?",
-    "choices": [
-      "Use bucket policies and access control lists (ACLs)",
-      "Enable versioning",
-      "Enable transfer acceleration",
-      "Create an RDS snapshot"
-    ],
-    "answer": "Use bucket policies and access control lists (ACLs)"
-  },
-  {
-    "question": "Which AWS service helps you to automate compliance and security checks?",
-    "choices": [
-      "AWS Config",
-      "AWS Trusted Advisor",
-      "AWS CloudTrail",
-      "AWS Shield"
-    ],
-    "answer": "AWS Config"
-  },
-  {
-    "question": "Which AWS service allows you to create dedicated network connections from your on-premises network to AWS?",
-    "choices": [
-      "AWS VPN",
-      "AWS Direct Connect",
-      "Amazon VPC",
-      "AWS PrivateLink"
-    ],
-    "answer": "AWS Direct Connect"
-  },
-  {
-    "question": "Which AWS service helps you to run data warehousing workloads?",
-    "choices": [
-      "Amazon RDS",
-      "Amazon DynamoDB",
-      "Amazon Redshift",
-      "Amazon ElastiCache"
-    ],
-    "answer": "Amazon Redshift"
-  },
-  {
-    "question": "Which AWS service provides a fully managed graph database?",
-    "choices": [
-      "Amazon RDS",
-      "Amazon Neptune",
-      "Amazon DynamoDB",
-      "Amazon Aurora"
-    ],
-    "answer": "Amazon Neptune"
-  },
-  {
-    "question": "What is the main benefit of using AWS CodeCommit?",
-    "choices": [
-      "It provides a secure, scalable, managed source control service",
-      "It automates software deployment",
-      "It monitors application performance",
-      "It manages infrastructure as code"
-    ],
-    "answer": "It provides a secure, scalable, managed source control service"
+    "answer": "Deploy the function with its memory allocation set to the maximum amount"
   }
 ]
