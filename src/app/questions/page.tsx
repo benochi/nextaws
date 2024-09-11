@@ -10,7 +10,7 @@ interface Question {
   answer: string;
 }
 
-// Cast the imported data to the Question[] type
+
 const questions: Question[] = questionsData as Question[];
 
 const Questions = () => {
